@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 
-const token = 'NTU2NjMxNDkxNTQzODI2NDMz.XlZ-NQ.1Bg-Wdw1cd3GhBgHV0jfaYNRxK4';
+//const token = 'NTU2NjMxNDkxNTQzODI2NDMz.XlZ-NQ.1Bg-Wdw1cd3GhBgHV0jfaYNRxK4';
 
 var test;
 
@@ -73,4 +73,4 @@ bot.on('message', msg => {
     channel.send(`Welcome to the server, ${member}`);
 });*/
 
-bot.login(token);
+bot.login(process.env.BOT_TOKEN);
