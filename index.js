@@ -21,6 +21,7 @@ bot.on('ready', () => {
 })
 
 bot.on('message', msg => {
+    console.log(msg.channel);
     if (msg.channel == "music-input") {
         msg.delete(3000);
     }
