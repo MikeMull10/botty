@@ -22,7 +22,7 @@ bot.on('ready', () => {
 
 bot.on('message', msg => {
     console.log(msg.channel);
-    if (msg.channel.name === "music-input") {
+    if (msg.channel.name === "music-input" && !msg.content[0] === "–") {
         msg.delete(3000);
     }
     if (msg.content === "!commands") {
