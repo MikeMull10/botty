@@ -21,6 +21,9 @@ bot.on('ready', () => {
 })
 
 bot.on('message', msg => {
+    if (msg.channel == "music-input") {
+        msg.delete(3000);
+    }
     if (msg.content === "!commands") {
         msg.channel.send("!commands, !avatar, !ping, !test, !randint (min) (max)");
     } else if (msg.content === "!avatar") {
