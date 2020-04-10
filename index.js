@@ -14,7 +14,7 @@ bot.on('ready', () => {
     bot.user.setStatus('available')
     bot.user.setPresence({
         game: {
-            name: 'Irritating Tyler'
+            name: 'Irritating Danny'
         }
     });
     test = 0;
